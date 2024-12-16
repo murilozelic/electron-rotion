@@ -1,13 +1,13 @@
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
-import { join } from 'node:path'
+import path, { join } from 'node:path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import { createFileRoute, createURLRoute } from 'electron-router-dom'
 import icon from '../../resources/icon.png'
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
+    width: 1120,
+    height: 700,
     show: false,
     autoHideMenuBar: true,
     backgroundColor: '#17141f',
@@ -39,7 +39,7 @@ function createWindow(): void {
   )
 
   const fileRoute = createFileRoute(
-    join(__dirname, '../renderer/index.html'),
+    path.join(__dirname, '../renderer/index.html'),
     'main',
   )
 
