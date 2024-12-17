@@ -1,3 +1,4 @@
+import { Editor } from '../components/Editor'
 import { ToC } from '../components/ToC'
 
 export function Document() {
@@ -16,7 +17,9 @@ export function Document() {
         </ToC.Root>
       </aside>
 
-      <section className="flex-1 flex flex-col items-center">asdasd</section>
+      <section className="flex-1 flex flex-col items-center">
+        <Editor />
+      </section>
     </main>
   )
 }
