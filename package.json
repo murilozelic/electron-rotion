@@ -22,7 +22,7 @@
     "build:linux": "electron-vite build && electron-builder --linux"
   },
   "dependencies": {
-    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
     "@radix-ui/react-collapsible": "^1.1.2",
     "@tanstack/react-query": "^5.62.8",
@@ -33,30 +33,30 @@
     "@tiptap/react": "^2.10.3",
     "@tiptap/starter-kit": "^2.10.3",
     "clsx": "^2.1.1",
-    "cmdk": "^1.0.0",
+    "cmdk": "^1.0.4",
     "electron-router-dom": "^1.0.5",
     "phosphor-react": "^1.4.1",
-    "react-router-dom": "^6.24.1"
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@rocketseat/eslint-config": "^2.2.2",
     "@tailwindcss/typography": "^0.5.15",
-    "@types/node": "^18.19.9",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "electron": "^28.2.0",
-    "electron-builder": "^24.9.1",
-    "electron-vite": "^2.0.0",
-    "eslint": "^8.56.0",
-    "postcss": "^8.4.38",
-    "prettier": "^3.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "@types/node": "^18.19.68",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.1",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
   }
 }
