@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "An Electron application with React and TypeScript",
   "main": "./out/main/index.js",
+  "type": "module",
   "author": "example.com",
   "homepage": "https://electron-vite.org",
   "scripts": {
@@ -35,6 +36,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.4",
     "electron-router-dom": "^1.0.5",
+    "electron-store": "^10.0.0",
     "phosphor-react": "^1.4.1",
     "react-router-dom": "^6.28.0"
   },
@@ -47,8 +49,8 @@
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "electron": "^28.3.3",
-    "electron-builder": "^24.13.3",
+    "electron": "33.2.1",
+    "electron-builder": "^25.1.8",
     "electron-vite": "^2.3.0",
     "eslint": "^8.57.1",
     "postcss": "^8.4.49",

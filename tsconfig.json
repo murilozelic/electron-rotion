@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "strict": true,
     "target": "esnext",
     "lib": [
       "esnext",
@@ -30,9 +29,7 @@
     }
   },
   "include": [
-    "src",
-    "src/preload/index.d.ts",
-    "electron.vite.config.*"
+    "src"
   ],
   "exclude": [
     "node_modules"
