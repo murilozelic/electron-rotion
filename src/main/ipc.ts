@@ -42,7 +42,7 @@ ipcMain.handle(
       title: 'Untitled',
     }
 
-    store.set(`document.${id}`, document)
+    store.set(`documents.${id}`, document)
 
     return {
       data: document,
