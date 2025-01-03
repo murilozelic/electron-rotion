@@ -13,9 +13,12 @@ export function CreatePage() {
         return response.data
       },
       onSuccess: (data) => {
-        queryClient.setQueryData(['documents'], (documents: Document[]) => {
-          return [...documents, data]
-        })
+        queryClient.setQueryData<Document[]>(
+          ['documents'],
+          (documents: Document[]) => {
+            return [...documents, data]
+          },
+        )
       },
     })
 

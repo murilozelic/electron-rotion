@@ -1,10 +1,10 @@
 import * as Collapsible from '@radix-ui/react-collapsible'
-import * as Navigation from './Navigation'
+import * as Navigation from './Navigation/index.js'
 import clsx from 'clsx'
 import { CaretDoubleLeft } from 'phosphor-react'
-import { CreatePage } from './CreatePage'
-import { Profile } from './Profile'
-import { Search } from './Search'
+import { CreatePage } from './CreatePage.js'
+import { Profile } from './Profile.js'
+import { Search } from './Search.js'
 import { useQuery } from '@tanstack/react-query'
 
 export function Sidebar() {
@@ -57,7 +57,10 @@ export function Sidebar() {
             <Navigation.SectionContent>
               {data?.map((document) => {
                 return (
-                  <Navigation.Link key={document.id}>
+                  <Navigation.Link
+                    to={`/documents/${document.id}`}
+                    key={document.id}
+                  >
                     {document.title}
                   </Navigation.Link>
                 )
