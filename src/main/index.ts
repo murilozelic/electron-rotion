@@ -6,6 +6,8 @@ import icon from '../../resources/icon.png'
 
 import './ipc'
 import './store'
+import { createTray } from './tray.js'
+import { createShortcuts } from './shortcuts.js'
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
@@ -25,6 +27,9 @@ function createWindow(): void {
       sandbox: false,
     },
   })
+
+  createTray(mainWindow)
+  createShortcuts(mainWindow)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
