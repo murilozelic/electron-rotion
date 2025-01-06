@@ -1,10 +1,10 @@
 import * as Collapsible from '@radix-ui/react-collapsible'
-import * as Navigation from './Navigation/index.js'
+import * as Navigation from './Navigation'
 import clsx from 'clsx'
 import { CaretDoubleLeft } from 'phosphor-react'
-import { CreatePage } from './CreatePage.js'
-import { Profile } from './Profile.js'
-import { Search } from './Search.js'
+import { CreatePage } from './CreatePage'
+import { Profile } from './Profile'
+import { Search } from './Search'
 import { useQuery } from '@tanstack/react-query'
 
 export function Sidebar() {

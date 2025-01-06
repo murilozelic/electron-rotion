@@ -6,8 +6,8 @@ import icon from '../../resources/icon.png'
 
 import './ipc'
 import './store'
-import { createTray } from './tray.js'
-import { createShortcuts } from './shortcuts.js'
+import { createTray } from './tray'
+import { createShortcuts } from './shortcuts'
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({

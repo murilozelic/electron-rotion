@@ -1,5 +1,5 @@
 import { contextBridge, ipcRenderer } from 'electron'
-import { IPC } from '@/shared/constants/ipc.js'
+import { IPC } from '@/shared/constants/ipc'
 import {
   CreateDocumentResponse,
   DeleteDocumentRequest,
@@ -7,7 +7,7 @@ import {
   FetchDocumentRequest,
   FetchDocumentResponse,
   SaveDocumentRequest,
-} from '@/shared/types/ipc.js'
+} from '@/shared/types/ipc'
 
 declare global {
   export interface Window {
@@ -52,6 +52,5 @@ if (process.contextIsolated) {
     console.error(error)
   }
 } else {
-  // @ts-expect-error (define in dts)
   window.api = api
 }

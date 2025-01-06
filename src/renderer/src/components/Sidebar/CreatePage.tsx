@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { Plus } from 'phosphor-react'
-import { Document } from '@shared/types/ipc.js'
+import { Document } from '@shared/types/ipc'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 

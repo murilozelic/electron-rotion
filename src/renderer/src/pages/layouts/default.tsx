@@ -1,8 +1,8 @@
 import * as Collapsible from '@radix-ui/react-collapsible'
 import { Outlet } from 'react-router-dom'
 
-import { Sidebar } from '../../components/Sidebar/index.js'
-import { Header } from '../../components/Header/index.js'
+import { Sidebar } from '../../components/Sidebar'
+import { Header } from '../../components/Header'
 import { useState } from 'react'
 
 export function Default() {

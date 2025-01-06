@@ -1,5 +1,5 @@
 import { MagnifyingGlass } from 'phosphor-react'
-import { SearchBar } from '../SearchBar/index.js'
+import { SearchBar } from '../SearchBar'
 import { useState } from 'react'
 
 export function Search() {

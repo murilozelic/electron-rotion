@@ -1,10 +1,10 @@
 import clsx from 'clsx'
 import * as Collapsible from '@radix-ui/react-collapsible'
 import { Code, CaretDoubleRight, TrashSimple } from 'phosphor-react'
-import * as Breadcrumbs from './Breadcrumbs/index.js'
+import * as Breadcrumbs from './Breadcrumbs'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { Document } from '~/src/shared/types/ipc.js'
+import { Document } from '~/src/shared/types/ipc'
 
 interface HeaderProps {
   isSidebarOpen: boolean

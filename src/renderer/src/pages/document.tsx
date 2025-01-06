@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom'
-import { Editor, OnContentUpdatedParams } from '../components/Editor/index.js'
-import { ToC } from '../components/ToC/index.js'
+import { Editor, OnContentUpdatedParams } from '../components/Editor'
+import { ToC } from '../components/ToC'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useMemo } from 'react'
-import { Document as IPCDocument } from '@/shared/types/ipc.js'
+import { Document as IPCDocument } from '@/shared/types/ipc'
 
 export function Document() {
   const { id } = useParams<{ id: string }>()

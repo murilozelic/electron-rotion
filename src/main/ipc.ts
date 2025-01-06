@@ -1,6 +1,6 @@
 import { ipcMain } from 'electron'
 import { randomUUID } from 'node:crypto'
-import { IPC } from '@/shared/constants/ipc.js'
+import { IPC } from '@/shared/constants/ipc'
 import {
   CreateDocumentResponse,
   DeleteDocumentRequest,
@@ -63,7 +63,6 @@ ipcMain.handle(
 
 ipcMain.handle(
   IPC.DOCUMENTS.DELETE,
-  async (_, { id }: DeleteDocumentRequest): Promise<void> => {
-    store.delete(`documents.${id}`)
-  },
+  async (_, { id }: DeleteDocumentRequest): Promise<void> =>
+    store.delete(`documents.${id}`),
 )
